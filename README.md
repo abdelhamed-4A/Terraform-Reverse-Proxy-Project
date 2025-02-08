@@ -65,11 +65,11 @@ The infrastructure is structured as follows:
 
 ## The Output will be :
 
-![](ScreenShots/public_lb_dns.png)
+![](ScreenShots/public_lb_dns.jpg)
 
 ## Copy it and Go to the browser and Past and go then this page will show to you : 
 
-![](ScreenShots/apache.png)
+![](ScreenShots/apache.jpg)
 
 
 ## Contributing
