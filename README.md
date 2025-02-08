@@ -67,7 +67,7 @@ The infrastructure is structured as follows:
 
 ![](ScreenShots/public_lb_dns.jpg)
 
-## Copy it and Go to the browser and Past and go then this page will show to you : 
+## Copy and paste it into your browser. This will show you the following page:
 
 ![](ScreenShots/apache.jpg)
 
