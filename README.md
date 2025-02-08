@@ -12,7 +12,7 @@ This project automates the deployment of a secure AWS cloud infrastructure using
 - [Infrastructure Overview](#infrastructure-overview)
 - [Prerequisites](#prerequisites)
 - [Getting_Started](#Getting_Started)
-- [Contributing](#contributing)
+- [Cleanup](#Cleanup)
 
 
 ## Modules
@@ -72,5 +72,8 @@ The infrastructure is structured as follows:
 ![](ScreenShots/apache.jpg)
 
 
-## Contributing
-Contributions are welcome! If you find any issues or have suggestions for improvements, please submit a pull request or open an issue on GitHub.
+## Cleanup
+To avoid AWS charges, destroy the infrastructure when done:
+  ```
+    terraform destroy -auto-approve
+  ```
