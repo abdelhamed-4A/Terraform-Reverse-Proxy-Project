@@ -1,9 +1,9 @@
 ---
 
-# Revese Proxy Congiquration with Terraform
+# Reverse Proxy Configuration with Terraform
 
 ## Description
-This project automates the deployment of a secure AWS cloud infrastructure using Terraform. The setup includes a Virtual Private Cloud (VPC) with public and private subnets across two availability zones. Public subnets host Nginx reverse proxy instances and an internet-facing Application Load Balancer (ALB), while private subnets contain Apache web servers and an internal ALB. The reverse proxy enhances security by shielding backend servers from direct internet exposure, routing traffic through the public ALB to private resources.
+This project automates the deployment of a secure AWS cloud infrastructure using Terraform. The setup includes a Virtual Private Cloud (VPC) with public and private subnets across two availability zones. Public subnets host Nginx reverse proxy instances and an internet-facing Application Load Balancer (ALB), while private subnets contain Apache web servers and an internal ALB. The reverse proxy enhances security by shielding backend servers from direct internet exposure and routing traffic through the public ALB to private resources.
 ## Architecture Diagram
 ![](ScreenShots/aws_terraform.drawio.svg)
 
@@ -30,9 +30,9 @@ The infrastructure is structured as follows:
   - Private Subnets: Host Apache servers and private ALB. Outbound traffic uses a NAT Gateway.
 - **Security Groups**:
   - Public Instances: Allow HTTP/HTTPS from any IP and SSH from trusted IPs (configurable).
-  - Private Instances: Restrict HTTP/HTTPS traffic to the public subnets; SSH allowed only from public instances.
+  - Private Instances: Restrict HTTP/HTTPS traffic to the public subnets; SSH is allowed only from public instances.
 - **Load Balancers**
-  - Public ALB: Listens on ports 80, forwards traffic to Nginx proxies.
+  - Public ALB: Listens on ports 80, and forwards traffic to Nginx proxies.
   - Private ALB: Routes requests from proxies to Apache servers.
 
 ## Prerequisites
